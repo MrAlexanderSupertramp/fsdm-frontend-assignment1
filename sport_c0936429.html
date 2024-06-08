@@ -5,136 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Favorite Athlete - Conor McGregor | Jiril Zala - C0936429</title>
 
-        <style>            
-            /* Next & previous buttons */
-            .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            }
-            * {box-sizing: border-box}
-            body {font-family: Verdana, sans-serif; margin:0}
-            .mySlides {display: none}
-            img {vertical-align: middle;}
-            /* Slideshow container */
-            .slideshow-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-            }
-            /* Next & previous buttons */
-            .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            }
-            /* Caption text */
-            .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-            }
-            /* On hover, add a black background color with a little bit see-through */
-            .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
-            }
-            /* Position the "next button" to the right */
-            .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-            }
-            /* The dots/bullets/indicators */
-            .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-            }
-            .justify-content-force {
-                text-align: justify;
-            }
-            /* Fading animation */
-            .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-            }
-            @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-            }
-            /* On smaller screens, decrease text size */
-            @media only screen and (max-width: 300px) {
-            .prev, .next,.text {font-size: 11px}
-            }
-            .active, .dot:hover {
-            background-color: #717171;
-            }
-            /* Number text (1/3 etc) */
-            .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-            }
-        </style>
+        <!-- css responsible for slider feature -->
+        <link rel="stylesheet" href="css/slider.css">
 
-        <style>
-            .unordered-list {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
-            .active {
-                background-color: rgb(27, 216, 219);
-            }
+        <!-- css responsible for list tags -->
+        <link rel="stylesheet" href="css/list.css">
 
-            .list-item {
-                float: left;
-            }
-
-            .list-item a {
-                display: inline-block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-            .list-item a:hover {
-                background-color: rgb(27, 216, 219);
-            }
-        </style>
-
-        <!-- logical span -->
+        <!-- logical span : changes the background color of span tag based on the screen width -->
         <style>
             @media (max-width: 768px) {
                 .logical-span {
@@ -150,6 +27,7 @@
     </head>
 
     <body>
+        <!-- navigation panel -->
         <div class="slideshow-container">
             <nav>
                 <ul class="unordered-list">
@@ -160,10 +38,12 @@
             </nav>
         </div>
 
+        <!-- header tag -->
         <div>
             <h1 style="text-align: center;width: 100%;"><span class="logical-span">Favorite Athlet - Conor McGregor</span></h1>
         </div>
 
+        <!-- slideshow of multiple images -->
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
@@ -191,6 +71,7 @@
             <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
 
+        <!-- main content sction -->
         <div  class="slideshow-container" style="margin-top: 80px; margin-bottom: 100px;">
             <div class="child-div">
                 <h1 class="">Conor McGregor : The Undisputed Champion of UFC</h1>
@@ -198,63 +79,31 @@
             </div>
 
             <div class="child-div">
-                <ol>
-                    <li>
+                <!-- description list -->
+                <dl>
+                    <dt>
                         <h2 style="margin-top: 30px;">Early Years and Rise in Dublin (1988–2008):</h2>
+                    </dt>
+                    <dd>
                         <p class="justify-content-force">Born on July 14, 1988, in Dublin, Ireland, McGregor grew up in the suburb of Crumlin. He excelled in soccer and Gaelic football but found his true passion in combat sports. At age 12, he began boxing training at Crumlin Boxing Club under Phil Sutcliffe. His love for martial arts eventually led him to mixed martial arts (MMA) training. During this phase, McGregor laid the foundation for his future success.</p>
-                    </li>
-                    <li>
+                    </dd>
+                    <dt>
                         <h2 style="margin-top: 30px;">UFC Stardom and Dual Championships (2008–2018):</h2>
+                    </dt>
+                    <dd>
                         <p class="justify-content-force">McGregor joined the UFC in 2013 and quickly made an impact. His counter-striking skills, knockout power, and trash-talking persona earned him the nickname “The Notorious.” In 2015, he became the first fighter to hold UFC titles in two weight classes simultaneously (Featherweight and Lightweight). His bout with Khabib Nurmagomedov at UFC 229 set PPV records. McGregor’s charisma and global popularity helped elevate MMA’s profile.</p>
-                    </li>
-                    <li>
+                    </dd>
+                    <dt>
                         <h2 style="margin-top: 30px;">Comebacks, Controversies, and Business Ventures (2018–present):</h2>
+                    </dt>
+                    <dd>
                         <p class="justify-content-force">McGregor faced setbacks, including losses to Dustin Poirier and a broken leg in 2021. His return to the octagon after three years is scheduled for UFC 303 against Michael Chandler. Outside the cage, he ventured into business, including Proper No. Twelve whiskey. Controversies, behavior, and legal issues have also marked this phase. Forbes ranked him the world’s highest-paid athlete in 2021.</p>
-                    </li>
-                </ol>
+                    </dd>
+                </dl>
             </div>
         </div>
 
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-
-                let i;
-
-                let slides = document.getElementsByClassName("mySlides");
-
-                let dots = document.getElementsByClassName("dot"); 
-
-                if (n < 1) {slideIndex = slides.length}
-                
-                if (n > slides.length) {slideIndex = 1}   
-
-                for (i = 0; i < dots.length; i++) {
-                
-                    dots[i].className = dots[i].className.replace(" active", "");
-
-                }
-
-                for (i = 0; i < slides.length; i++) {
-                
-                slides[i].style.display = "none";  
-
-                }
-
-                dots[slideIndex-1].className += " active";
-
-                slides[slideIndex-1].style.display = "block";  
-            }
-        </script>
+        <!-- responsible scripts for slider feature -->
+        <script type="text/javascript" src="js/slider.js"></script>
     </body>
 </html>
